@@ -1,0 +1,17 @@
+BDD CONNECTION :
+Id	|->
+		users : Nom, Prenom, Email, Societe, Password, id, level_account, forum_pseudo
+
+		mail : Nom, Prenom, subject, mail, mail_retour, societe, id
+
+
+Forum	|->	
+		forum_categorie :  cat_id, cat_nom, cat_ordre
+
+		forum_forum : forum_id, cat_id, forum_name, forum_desc, forum_ordre, forum_last_post_id, forum_topic, forum_post, auth_view, auth_post, auth_topic, auth_annonce, auth_modo
+		
+		forum_topic : topic_id, forum_id, topic_titre, topic_createur, topic_vu, topic_time, topic_genre, topic_last_post, topic_first_post, topic_post
+		
+		forum_post : 
+
+

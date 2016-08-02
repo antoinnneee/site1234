@@ -1,0 +1,13 @@
+<?php
+define("_LANGFLAG","<td><img class=\"flags\" src=\"img/Flag_En.png\"  onclick=\"window.location.href='?lang=en'\" /></td>" );
+
+define("_LANGFLAG","	<img class='flags' src='img/Flag_Fr.png' />");
+define("_BIENVENUE","Hello " . $_SESSION['nom'] . " " . $_SESSION['prenom']);
+define("_BIEN_AD","You're connect with admin session.");
+define("_ACCUEIL","ACCUEIL");
+define("_REALISATION","PROJECTS");
+define("_SERVICES","SERVICES");
+define("_CONTACT","CONTACT");
+define("_ASTUCE","FATHER BUBU'S TIPS");
+define("_DOWNLOAD","DOWNLOAD");
+?>

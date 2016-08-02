@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html lang="en">
+<head>
+    <title>Nivo Slider Demo</title>
+    <link rel="stylesheet" href="/themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/themes/light/light.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/themes/dark/dark.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/themes/bar/bar.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/CSS/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/CSS/style.css" type="text/css" media="screen" />
+</head>
+<body>
+    <div id="wrapper">
+        <a href="http://dev7studios.com" id="dev7link" title="Go to dev7studios">dev7studios</a>
+
+        <div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider">
+                <img src="img/EcLed_crop.jpg" data-thumb="img/EcLed_crop.jpg" alt="" title="Dispositif d'éclairage LED, 50 000heures garanties" />
+                <a href="localhost/realisation.php#"><img src="img/ReguSand_crop.jpg" data-thumb="demo/images/up.jpg" alt="" title="Régulateur de sablage" /></a>
+                <img src="img/Sourdine_crop.jpg" data-thumb="img/Sourdine_crop.jpg" alt="" data-transition="slideInLeft" title="Sourdine automatique" />
+                <img src="img/forage.jpg" data-thumb="img/forage.jpg" alt="" title="<strong><a href='#'>Dispositif de renvoi de mesures pour foreuse</a>.</strong>" />
+                <img src="img/IHM.jpg" data-thumb="img/IHM.jpg" alt="" title="<strong>Interface Home Machine</strong>" />
+                <img src="img/hydratation.jpg" data-thumb="img/hydratation.jpg" alt="" title="<strong><a href='#'>Électronique de gestion d'une machine d'hydratation du colon</a>.</strong>" />
+
+            </div>
+   <?php /*              <div id="htmlcaption" class="nivo-html-caption">
+           <strong><a href="#">Dispositif de renvoi de mesures pour foreuse</a>.</strong>   
+            </div>*/?>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="scripts/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+</body>
+</html>

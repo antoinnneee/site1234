@@ -1,0 +1,35 @@
+<?php
+session_start();
+
+if(empty($_SESSION['lang'])){
+    $_SESSION['lang'] = "fr";
+}else{
+    switch($_SESSION['lang']){
+        case "fr":
+        $_SESSION['lang'] = "fr";
+        break;
+        case "en":
+        $_SESSION['lang'] = "en";
+        break;
+        case "it":
+        $_SESSION['lang'] = "es";
+        break;
+        default :
+        $_SESSION['lang'] = "fr"; //au cas ou quelqu'un rentre autre chose que fr/en ou it
+        break;
+    }
+}
+ 
+switch($_SESSION['lang']){
+        case "fr":
+        $fichier_langage = "lang/fichier_fr.php";
+        break;
+        case "en":
+        $fichier_langage = "lang/fichier_en.php";
+        break;
+        case "es":
+        $fichier_langage = "lang/fichier_es.php";
+        break;
+}
+include($fichier_langage);
+?>

@@ -1,0 +1,22 @@
+<?php
+session_start();
+
+function ClickFlag($lang){
+$_SESSION['lang'] = $lang;
+
+}
+
+define("_LANGFLAG","<td><img class=\"flags\" src=\"img/Flag_En.png\"  onclick=\"window.location.href='?lang=en'\" /></td>" );
+
+
+define("_BIENVENUE","Bonjour " . $_SESSION['nom'] . " " . $_SESSION['prenom']);
+define("_BIEN_AD","Vous etes connecté avec une session admin.");
+define("_ACCUEIL","ACCUEIL");
+define("_REALISATION","REALISATION");
+define("_SERVICES","SERVICES");
+define("_CONTACT","CONTACT");
+define("_ASTUCE","LES ASTUCES DU PÈRE BUBU");
+define("_DOWNLOAD","TÉLÉCHARGEMENT");
+
+
+?>
